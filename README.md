@@ -1,16 +1,42 @@
-# weather
+# Weather Application
 
-A new Flutter project.
+## Environment required
 
-## Getting Started
+- Xcode: above 15
+- Flutter: 3.16.5
+- Android: Kotlin 1.7.10
+- IDE: Android Studio
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Search current weather throw lat/long information.
+- You can know all weather information at lat/long location.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to run this code
+
+- I just setup it on Android Studio IDE. You need install it if it don't have in your device.
+- Open source codes and follow next steps:
+- Select develop configuration and  click run/debug icon.
+- I just setup develop enviroment.
+
+## Instructions
+
+#### Common
+- Components used to save custom widget/function/config/helper
+- You can use all code into `commont component` by the way:
+  `import 'package:weather/common/common.dart';`
+- configs: save environment variables (load from .env.develop file)
+- dialogs: save dialog widgets (error/location denied dialog)
+- helpers: write custom function to get current location.
+- widgets: save custom widgets
+
+#### Features
+- Components used to save all app feature
+- Folder tree: screen/components/items(exists if screen have listview/gridview...)
+
+#### Network
+- Components used to access network.
+- api: write service to connect network core to call weather api.
+- models: write model to parse from Map to Object (easy to access value).
+- another files: write network base.
