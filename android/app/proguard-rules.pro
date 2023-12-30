@@ -1,0 +1,1 @@
+-keep class com.weather.vn.weather.BuildConfig { *; }
